@@ -98,10 +98,11 @@ flex-direction: row;
 
 justify-content: center;
 align-items: center;
-color: rgb(252, 252, 252);
+color : rgb(252, 252, 252);
 }
 
-#logo_img{
+
+#logo_img {
     height: 100px;
 }
 
@@ -109,7 +110,12 @@ color: rgb(252, 252, 252);
 .second_container{
     height: fit-content;
 }
-  .speaker_form {
+
+h1{
+    color : #677765;
+}
+ 
+.speaker_form {
     margin-bottom: 40px;
     display: flex;
     justify-content: flex-start;
@@ -130,7 +136,7 @@ color: rgb(252, 252, 252);
     font-size: 14px;
   }
   
-  .speaker_form label {
+.speaker_form label {
     margin-bottom: 5px;
   }
 
@@ -141,7 +147,6 @@ color: rgb(252, 252, 252);
 .speaker_form input[type='password']:invalid
 {
   border: 1px solid #D55C5F;
-  
   box-shadow: none; /* Remove default red glow in Firefox */
 }
 
@@ -227,23 +232,23 @@ color: rgb(252, 252, 252);
 
  
   
-  p  label {
+p  label {
     flex-basis: 30%;
     text-align: left;
     font-size: 1rem; /* Slightly larger font for labels */
     font-weight:700;
   }
   
-  input {
+input {
     flex-grow: 1;
     width: 50%;
     padding: 3px;
     border: 1px solid #999;
     transition: width 0.3s ease;
     font-size: 1rem; /* Responsive font size for input */
-  }
+}
   
-  button {
+button {
     font-size: 1rem; /* Larger button font size */
     font-weight: bold;
     color: #FFFFFF;
@@ -255,12 +260,10 @@ color: rgb(252, 252, 252);
     width: 100%;
     max-width: 200px;
     margin: 10px 20px ;
-    
-    
-  }
+}
   
   /* Responsive styles for smaller screens */
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     section {
       flex-direction: column;
     }
@@ -297,3 +300,31 @@ color: rgb(252, 252, 252);
     }
   }
   
+
+  /* Adjust the container around the password inputs */
+section {
+    position: relative; /* Parent relative to allow absolute positioning */
+    margin-bottom: 20px; /* Ensures some space between inputs */
+}
+
+/* Error message positioning */
+#password_error {
+    position: absolute;   /* Take it out of document flow */
+    top: 100%;            /* Position right below the input */
+    left: 0;
+    color: red;
+    font-size: 12px;
+    display: none;        /* Hidden by default */
+}
+
+/* Add a fixed height to the input container */
+section p {
+    position: relative;
+    margin: 0;
+    height: 60px; /* Fix height so the container doesn’t grow */
+}
+
+input {
+    padding: 10px; /* For consistent input padding */
+    box-sizing: border-box;
+}
