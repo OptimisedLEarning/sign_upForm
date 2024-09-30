@@ -1,5 +1,4 @@
 
-
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -138,17 +137,15 @@ color: rgb(252, 252, 252);
 
 
 
-.speaker_form input[type='text']:invalid,
 .speaker_form input[type='email']:invalid ,
-.speaker_form input[type='password']:invalid,
-.speaker_form input[type='phone']:invalid
+.speaker_form input[type='password']:invalid
 {
   border: 1px solid #D55C5F;
   
   box-shadow: none; /* Remove default red glow in Firefox */
 }
 
-  .speaker_form select {
+.speaker_form select {
     width: 100%;
     padding: 5px;
     font-size: 14px;            /* This won't work in Chrome or Safari */
@@ -159,24 +156,22 @@ color: rgb(252, 252, 252);
 .speaker_form button {
     font-size: 16px;
     font-weight: bold;
-  
     color: #FFFFFF;
     background-color: #5995DA;
-  
     border: none;
     border-radius: 3px;
-  
     padding: 5px 5px;
     cursor: pointer;
   }
   
-  .speaker_form button:hover {
+
+.speaker_form button:hover {
     background-color: #427358;
-  }
+}
   
-  .speaker_form button:active {
+.speaker_form button:active {
     background-color: #38f777;
-  }
+}
 
 
 

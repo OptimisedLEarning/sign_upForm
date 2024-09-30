@@ -16,13 +16,14 @@
             <img id="logo_img" src="odin-lined.png" alt="LOGO">
              WEBDOCS
         </div>   
-
+    
         
     </div>
- <div class="second_container">
+ 
+    <div class="second_container">
     <h1> Get Started Sign Up  </h1>
    
-        <form action ="" method="post" class="speaker_form">
+        <form action ="" method="post" class="speaker_form"   onsubmit="return validatePasswords()">
             <div >
         
           <h3>Let's do it </h3>
@@ -32,7 +33,7 @@
               <span>First Name: </span>
               <strong><span aria-label="required">*</span></strong>
             </label>
-            <input type="text" id="firstname" name="user_firstname" required placeholder="John" />
+            <input type="text" id="firstname" name="user_firstname" required placeholder="John"/>
           </p>
            <p>
             <label for="lastname">
@@ -76,7 +77,7 @@
               <span>Confirm Password :</span>
               <strong><span aria-label="required">*</span>                </strong>
             </label>
-            <input type="password" id="confirm_pass" name="confirm_password" required placeholder="Baba@123"/>
+            <input type="password" id="confirm_pass" name="confirm_password" required placeholder="Baba@123"   oninput="validatePasswords()"/>
             <span id="password_error" style="color:red; display:none;">Passwords do not match!</span>
 
           </p>
